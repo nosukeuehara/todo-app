@@ -1,10 +1,11 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
-import { users } from "./api/user/route";
+import { registTask } from './api/task/route';
+
 
 const app = new Hono()
 
-app.route("/users", users);
+app.route("/task/regist", registTask);
 
 const port = 8080
 
