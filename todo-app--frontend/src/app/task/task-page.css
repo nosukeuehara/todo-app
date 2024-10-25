@@ -5,3 +5,8 @@
 td {
   text-align: center;
 }
+
+.wrapper {
+  width: min(100%, 1024px);
+  margin: 0px auto;
+}
