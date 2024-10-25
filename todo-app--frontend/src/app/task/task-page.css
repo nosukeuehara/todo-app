@@ -1,3 +1,7 @@
 .task {
   display: flex;
 }
+
+td {
+  text-align: center;
+}

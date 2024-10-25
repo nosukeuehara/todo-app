@@ -16,7 +16,7 @@ const page = async () => {
       </thead>
       <tbody>
         {tasks.map((task) => (
-          <tr key={task.id}>
+          <tr key={task.id} className="task-table__body">
             <td>{task.taskName}</td>
             <td>{task.start}</td>
             <td>{task.end}</td>
