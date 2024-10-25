@@ -19,6 +19,10 @@ export const taskRegister = async (clientData: TaskArg) => {
   });
 }
 
+export const taskEdit = async () => {
+
+}
+
 
 // タスク登録用の引数インターフェース
 export interface TaskArg {
