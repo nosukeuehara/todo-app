@@ -15,16 +15,9 @@ datasource db {
 
 // タスク
 model Task {
-  id       Int            @id @default(autoincrement())
-  start    DateTime       @default(now())
+  id       Int      @id @default(autoincrement())
+  start    DateTime @default(now())
   end      DateTime
   comments String
-  taskName TaskNameList[]
-}
-
-model TaskNameList {
-  id             Int    @id @default(autoincrement())
-  taskNameListId Int
-  TaskName       String
-  task           Task   @relation(fields: [taskNameListId], references: [id])
+  taskName String
 }
