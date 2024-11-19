@@ -19,6 +19,12 @@ export const taskRegister = async (clientData: TaskArg) => {
     throw new Error("Invalid date format for start or end.");
   }
 
+
+
+
+
+
+
   return await prisma.task.create({
     data: {
       start: startDate, // 有効なDate型に変換
